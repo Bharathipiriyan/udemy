@@ -104,6 +104,8 @@ body{
     position: absolute;
     top: 10%;
     margin: 10px;
+    height: 100px;
+
 
 }
 
@@ -131,7 +133,9 @@ body{
 }
 
 .course-card{
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 
 }
 
@@ -196,4 +200,22 @@ body{
     justify-content: space-between;
     margin: 10px;
     align-items:center;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .course-card{
+        flex-basis: 40%;
+    }
+
+    .sale-image__ofrer{
+        height: 80px;
+    
+    }
+    
 }
